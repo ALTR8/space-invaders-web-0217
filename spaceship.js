@@ -7,7 +7,7 @@ class Spaceship {
 		this.cloaked = false
 		this.warpDrive = 'disengaged'
 		this.phasersCharge = 'uncharged'
-		this.docked = (crew.length == 0) ? true : false
+		this.docked = crew.length ? false : true
 
 		crew.forEach((crewMember) => {
 			crewMember.currentShip = this
