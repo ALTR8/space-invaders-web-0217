@@ -73,6 +73,8 @@ describe('space invaders', () => {
     })
 
     it('a crew member should return their ship when `currentShip` is called on them', function() {
+      console.log(spaceship)
+      console.log(tristan)
       expect(tristan.currentShip).toBe(spaceship)
       expect(tristan.currentShip.name).toBe('The Krestel')
     })
